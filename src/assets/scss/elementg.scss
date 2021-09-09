@@ -1,0 +1,153 @@
+// 表单改为深色
+.k-drak {
+    .el-input__inner {
+        background: #4d5679;
+        border: 1px solid #4d5679;
+        color: #fff;
+    }
+
+    .el-date-editor .el-range-input {
+        background: #4d5679;
+    }
+
+    .el-date-editor .el-range-separator {
+        color: #c0c4cc;
+    }
+}
+
+.select-full {
+    width: 100%;
+}
+
+.xh-from-drak {
+
+    .el-input,
+    .el-input__inner {
+        background: #4d5679;
+        border: 1px solid #4d5679;
+        color: #fff;
+    }
+
+    .el-input-group__append,
+    .el-input-group__prepend {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.xh-tree-drak {
+    .el-tree {
+        background: #39436a;
+        color: #fff;
+    }
+
+    .el-tree-node__content:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .el-tree-node:focus>.el-tree-node__content {
+        background-color: rgba(0, 0, 0, .3)
+    }
+}
+
+
+// 把icon转换为btn按钮
+.xh-icon-btns-primary {
+    color: $el-color-brand;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.xh-icon-btns-success {
+    color: $el-color-success;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.xh-icon-btns-warning {
+    color: $el-color-warning;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.xh-icon-btns-danger {
+    color: $el-color-danger;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+
+.baogao-tree {
+
+    // 修改tree的图表
+    .el-tree-node__label {
+
+        &::before {
+            font-family: "iconfont" !important;
+            content: "\e656";
+            color: #1a8cf7;
+            margin-right: 5px;
+        }
+
+    }
+
+    .el-tree-node__children .el-tree-node__content {
+        .el-tree-node__label::before {
+            font-family: "iconfont" !important;
+            content: "\e654";
+            color: #e8bd33;
+            margin-right: 5px;
+        }
+    }
+
+    // 横向出现滚动条
+.el-tree {
+    height: calc(100vh - 190px); // 需要设置高度，否则出现横向滚动条会看不到。
+    padding-right: 10px;
+    overflow: auto;
+
+}
+
+.el-tree-node__content {
+    align-self: baseline;
+}
+
+.el-tree>.el-tree-node {
+    min-width: 100%;
+    display: inline-block;
+}
+}
+
+.knowledge-tree {
+
+    @extend .baogao-tree;
+
+    // 修改tree的图表
+    .el-tree-node__label {
+
+        &::before {
+            font-family: element-icons!important;
+            content: "\e78a";
+            color: #e8bd33;
+            margin-right: 5px;
+        }
+
+    }
+
+    .el-tree-node__children .el-tree-node__content {
+        .el-tree-node__label::before {
+            font-family: element-icons!important;
+            content: "\e785";
+            color: #1a8cf7;
+            margin-right: 5px;
+        }
+    }
+}

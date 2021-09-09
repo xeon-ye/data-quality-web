@@ -1,0 +1,140 @@
+/* 头部 */
+.headerBg{
+    background-color: #0E183F;
+}
+
+#header .logo-box  span.header-title-color {
+    color: #ffffff;
+
+}
+.header-user-name-color {
+    color: #f2f2f2;
+}
+
+/* 左侧导航区域 */
+.collapse-btn{
+    background: #262f52;
+    color: #D8D8D8;
+}
+.collapse-btn:hover{
+    background: #39436A;
+    color: #1890FF;
+}
+
+/* tags导航 */
+.tags-bg {
+    background: #323a5c;
+}
+.tags {
+    color: #ffffff;
+}
+.tags-li {
+    border-color: transparent transparent #5b617d;
+}
+
+.tags-li:not(.active):hover {
+    border-color: transparent transparent #0E183F;
+}
+
+.tags-li-title {
+    color: #fff;
+}
+
+.tags-li.active .tags-li-title {
+    color: #666;
+}
+
+.tags-li.active {
+    /* 设置tag的背景色 首页是显示 #39436a */
+    border-color: transparent transparent #fff;  
+}
+.tags-close-box {
+    background: #fff;
+}
+
+
+.iconfont {
+    color: #fff !important;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.tags-li.active .el-icon-close {
+    color: #0E183F;
+}
+/* 主页图表数据 */
+.dashboard .tags-li.active{
+    border-color: transparent transparent #39436a;  
+}
+.dashboard .tags-li.active .tags-li-title{
+    color: #fff !important;
+}
+.dashboard .tags-li.active .el-icon-close {
+    color: #fff;
+}
+.content-box {    
+    background: #39436a;
+}
+.dashboard .el-tabs__item.is-active{
+    color: #fff !important;
+}
+.dashboard .el-tabs__item.is-active::before{
+    background: #39436a!important;  
+}
+.dashboard .el-tabs__item.is-active .el-icon-close {
+    color: #fff;
+}
+
+/* 底部 */
+.footer{
+    background: #262f52;
+    color: #ccc;
+    z-index: 100;
+}
+
+
+/* 质量报告界面颜色 */
+.zlbg-body-bg {
+    background-color: #424a6c;
+}
+.zlbg-left-menu-bg {
+    background-color: #39436a;
+}
+.zlbg-left-menu-title{
+    color: #fff;
+}
+.zlbg-right-box-bg {
+    background-color: #283259;
+    border: 1px solid #0E183F;
+}
+.zlbg-right-title{
+    color: #e6e6e6;
+}
+.zlbg-right-txt {
+    color: #b3b3b3;
+}
+.zlbg-search-bg {
+    background-color: #0E183F;
+}
+.zlbg-search-txt{
+    color: #f2f2f2;
+}
+.zlbg-blue-bg {
+    background: #21aced;
+}
+.zlbg-blue-color{
+    color: #21aced;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

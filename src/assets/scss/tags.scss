@@ -1,0 +1,117 @@
+
+
+.avue-tags {
+    user-select: none;
+    position: relative;
+    padding: 0 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top: 1px solid #323a5c;
+    background-color: #323a5c;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0);
+    .el-tabs--card>.el-tabs__header {
+        margin: 0;
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__nav,
+    .el-tabs--card>.el-tabs__header .el-tabs__item,
+    .el-tabs--card>.el-tabs__header {
+        border: none;
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__item:first-child {
+        border-left-width: 1px
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__item {
+        // width: 115px;
+        margin: 0 2px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: normal;
+        color: #ccc;
+        &.is-active {
+            color: #333;
+        }
+        &.is-active::before {
+            background: #fff;
+        }
+    }
+    .el-tabs__nav-prev,
+    .el-tabs__nav-next {
+        width: 20px;
+        line-height: 34px;
+        font-size: 18x;
+        text-align: center;
+    }
+    &__box {
+        position: relative;
+        box-sizing: border-box;
+        padding-right: 106px;
+        width: 100%;
+        &--close {
+            .el-tabs__item {
+                &:first-child {
+                    padding: 0 20px !important;
+                    .el-icon-close {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &__contentmenu{
+        position: fixed;
+        width:120px;
+        background-color: #fff;
+        z-index:1024;
+        border-radius: 5px;
+        box-shadow: 1px 2px 10px #ccc;
+        .item{
+            cursor: pointer;
+            font-size: 14px;
+            padding: 8px 20px 8px 15px;
+            color: #606266;
+            &:first-child{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            &:last-child{
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            &:hover{
+                background-color: #409EFF;
+                color:#fff;
+            }
+        }
+    }
+    &__menu {
+        position: absolute !important;
+        top: 3px;
+        right: 0;
+        padding: 1px 0 0 15px;
+        box-sizing: border-box;
+    }
+}
+.xh-tabls {
+    .el-tabs__nav div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #545a75;
+        transform: perspective(0.6em) rotateX(3deg);
+        transform-origin: bottom;
+        z-index: -1;
+    }
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item .el-icon-close{
+    right: -4px;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active .el-icon-close{
+    right: -10px;
+}
